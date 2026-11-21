@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoMonitor | Dashboard Ambiental</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <main class="conteudo">
+
+           
+            <header class="cabecalho">
+
+                <div>
+                    <h1>Visão Geral</h1>
+                    <p>Acompanhe as condições ambientais.</p>
+                </div>
+
+                <div class="usuario">
+                    <span>🌱</span>
+                    <div>
+                        <strong>Monitoramento</strong>
+                        <p>Sistema ambiental</p>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- indicadores -->
+            <section class="indicadores">
+
+                <div class="card">
+                    <div class="card-topo">
+                        <h3>Temperatura</h3>
+                        <span>🌡️</span>
+                    </div>
+
+                    <h2>-- °C</h2>
+                    <p>Temperatura atual</p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-topo">
+                        <h3>Umidade</h3>
+                        <span>💧</span>
+                    </div>
+
+                    <h2>-- %</h2>
+                    <p>Umidade do ambiente</p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-topo">
+                        <h3>Luminosidade</h3>
+                        <span>☀️</span>
+                    </div>
+
+                    <h2>-- lux</h2>
+                    <p>Intensidade luminosa</p>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-topo">
+                        <h3>Precipitação</h3>
+                        <span>🌧️</span>
+                    </div>
+
+                    <h2>-- mm</h2>
+                    <p>Volume de chuva</p>
+                </div>
+
+            </section>
+
+
+            <!-- gráficos -->
+            <section class="graficos">
+
+                <div class="grafico-card">
+                    <div class="secao-titulo">
+                        <h3>Temperatura ao longo do tempo</h3>
+                        <span>Histórico</span>
+                    </div>
+
+                    <canvas id="graficoTemperatura"></canvas>
+                </div>
+
+
+                <div class="grafico-card">
+                    <div class="secao-titulo">
+                        <h3>Umidade dos sensores</h3>
+                        <span>Comparação</span>
+                    </div>
+
+                    <canvas id="graficoUmidade"></canvas>
+                </div>
+
+            </section>
+
+
+            <!-- tabela de sensores -->
+            <section class="tabela-container">
+
+                <div class="secao-titulo">
+                    <h3>Monitoramento dos sensores</h3>
+                    <span>Dados recebidos</span>
+                </div>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Localização</th>
+                            <th>Temperatura</th>
+                            <th>Umidade</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelaSensores">
+
+                        <tr>
+                            <td colspan="5">
+                                 dados dos sensores
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+
+            <!-- alertas -->
+            <section class="alertas">
+
+                <div class="secao-titulo">
+                    <h3>Alertas ambientais</h3>
+                </div>
+
+                <div id="listaAlertas">
+                    <p>Nenhum alerta recebido.</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
