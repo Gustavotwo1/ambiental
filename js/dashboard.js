@@ -1,4 +1,3 @@
-
 let graficoTemperatura = null;
 let graficoUmidade = null;
 
